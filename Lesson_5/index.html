@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="01.css">
+
+</head>
+<body>
+<script>
+    let table = document.createElement('table'); // создали тэг <table>
+    document.body.appendChild(table); //добавили <table> в body
+    let letters = ' ABCDEFJH ';
+    let numbers = ' 12345678 ';
+
+    //цикл, создающий ряд
+    for(let i=0; i< 10; i++){
+        var tr = document.createElement('tr');
+
+
+        //вложеный цикл, создающий ячейки
+        for(let j=0; j< 10; j++) {
+            var td = document.createElement('td');
+            //var texTd = document.createTextNode(i+j); //текст ячеек
+            //td.appendChild(texTd); //присваиваем ячейке текст
+            tr.appendChild(td); //присваиваем ряду ячейки
+
+            if ((0 < j && j < 9) && (0 < i && i < 9)) {
+                if ((j + i) % 2 !== 0) {
+                    td.style.backgroundColor = '#695757';
+                    td.style.height = '50px';
+                    td.style.width = '50px';
+                }
+            }
+
+            if (j === 0) {
+                td.className += " " + 'verticalLeft';
+            }
+
+            if (j === 9) {
+                td.className += " " + 'verticalRight';
+            }
+            if (i === 0) {
+                td.className += " " + 'horizontalTop';
+            }
+            if (i === 9) {
+                td.className += " " + 'horizontalBottom';
+            }
+
+        }
+        table.appendChild(tr); //присваиваем таблице ряды с ячейками
+    }
+
+    table.style.border = 'solid 2px black';
+
+
+</script>
+</body>
+</html>

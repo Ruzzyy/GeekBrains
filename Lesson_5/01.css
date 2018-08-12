@@ -1,0 +1,21 @@
+
+.verticalLeft, .verticalRight {
+    width: 30px;
+
+}
+
+.horizontalTop, .horizontalBottom {
+    height: 30px;
+}
+
+.verticalLeft, .verticalRight, .horizontalTop, .horizontalBottom {
+    background-color: #695757;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+table {
+    margin: 0 auto;
+    border-spacing:1px;
+}
