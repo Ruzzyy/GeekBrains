@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bucket</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="bucket.js"></script>
+</head>
+<body>
+
+<header>
+    <div id="bucket">
+        <h3> Корзина </h3>
+        <h5>Итого: </h5>
+        <div id="basket1"></div>
+        <div id="basket2"></div>
+        <div id="basket3"></div>
+        <p>Товаров в корзине: <span id="total"></span></p>
+        <p>Цена: <span id="cost"></span> </p>
+        <button id="result"> Общая сумма </button>
+    </div>
+
+</header>
+<div id="main">
+    <div class="items">
+        <img src="img/post.png" alt="">
+        <p class="name"> Товар №1 </p>
+        <p class="price"> Цена: 500 </p>
+        <button onclick="getResult()" class="getBucket" data-cost="500"> Купить </button>
+    </div>
+    <div class="items">
+        <img src="img/post.png" alt="">
+        <p class="name"> Товар №2 </p>
+        <p class="price"> Цена: 500 </p>
+        <button onclick="getResult()" class="getBucket" data-cost="500"> Купить </button>
+    </div>
+    <div class="items">
+        <img src="img/post.png" alt="">
+        <p class="name"> Товар №3 </p>
+        <p class="price">Цена: 500 </p>
+        <button onclick="getResult()" class="getBucket" data-cost="500"> Купить </button>
+    </div>
+
+
+</div>
+
+</body>
+</html>
