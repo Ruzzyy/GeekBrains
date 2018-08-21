@@ -77,19 +77,7 @@ switch (event){
                 ok = isAnswer(question[i].a0, event);
             }
             i++;
-        }while(!ok);
-
-        switch (event){
-            case 3: // если второй ответ верный, переходим к третьему вопросу
-                money += q2.cash;
-                do{
-                    ok = false;
-                    event = +prompt(q3.question + q3.a + q3.b + q3.c + q3.d + 'Выигрыш: ' + q3.cash);
-                    if(event== -1) {
-                        break;
-                    }else {
-                        ok = isAnswer(question[i].a0, event);
-                    }
+        
                     i++;
                 }while(!ok);
 
